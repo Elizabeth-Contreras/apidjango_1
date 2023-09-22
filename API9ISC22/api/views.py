@@ -3,6 +3,7 @@ from rest_framework.views import APIView
 
 # Create your views here.
 class Home(APIView):
-    template_name='index.html'
+    template_name='registro.html'
     def get(self,request):
         return render(request,self.template_name)
+    
