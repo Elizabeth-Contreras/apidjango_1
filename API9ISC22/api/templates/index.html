@@ -33,12 +33,16 @@
             <span class="fas fa-key"></span>
             <input type="password" name="password" id="pwd" placeholder="Contraseña">
         </div>
-        <button class="btn mt-3">Entrar</button>
+        <center>
+          <a class="btn" href="{% url 'principal' %}">Entrar</a>
+        </center>
+
+        
     </form>
     <div class="text-center fs-6">
       <br>
       <center>
-        <a href="">Recuperar contraseña</a> o <a href="{% url 'registro' %}">Registrarse</a>
+        <a href="{% url 'recuperar' %}">Recuperar contraseña</a> o <a href="{% url 'registro' %}">Registrarse</a>
       </center>
         </div>
 </div>
