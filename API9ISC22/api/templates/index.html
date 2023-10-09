@@ -20,25 +20,41 @@
     <center>
       <div class="text-center mt-4 name">
         Iniciar sesión
+        <!-- {% if messages %}
+                                <ul class="messages">
+                                    {% for message in messages %}
+                                        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                                    {% endfor %}
+                                </ul>
+                                {% endif %} -->
     </div>
     <br>
     </center>
     
-    <form class="p-3 mt-3">
+  
+    <form class="p-3 mt-3" method="POST" action="{% url 'login_view' %}">
+      {% csrf_token %}
         <div class="form-field d-flex align-items-center">
             <span class="far fa-user"></span>
-            <input type="text" name="userName" id="userName" placeholder="Usuario">
+            <input class="text" type="text" id="id_usuario" name="id_usuario" placeholder="Usuario" required="">
         </div>
         <div class="form-field d-flex align-items-center">
             <span class="fas fa-key"></span>
-            <input type="password" name="password" id="pwd" placeholder="Contraseña">
+            <input class="text" type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required="">
         </div>
         <center>
-          <a class="btn" href="{% url 'principal' %}">Entrar</a>
+          <button type="submit">Iniciar sesión</button> 
         </center>
-
+        {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+                <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %} 
         
     </form>
+   
     <div class="text-center fs-6">
       <br>
       <center>

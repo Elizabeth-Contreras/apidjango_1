@@ -21,19 +21,32 @@
 		<h1>Registrar usuario</h1>
 		<div class="main-agileinfo">
 			<div class="agileits-top">
-				<form action="#" method="post">
-					<input class="text" type="text" name="Username" placeholder="Usuario" required="">
-					<input class="text email" type="email" name="email" placeholder="Email" required="">
-					<input class="text" type="password" name="password" placeholder="Contraseña" required="">
-					<input class="text w3lpass" type="password" name="password" placeholder="Confirmar contraseña" required="">
+				<form method="post" action="{% url 'registro_usuario' %}">
+
+					{% csrf_token %}
+					<input class="text" type="text" id="id_usuario" name="id_usuario" placeholder="Usuario" required="">
+					<input class="text email" type="email" id="correo" name="correo" placeholder="Email" required="">
+					<input class="text" type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required="">
+					<input class="text w3lpass" type="password" name="confirmar_contrasena" placeholder="Confirmar contraseña" required="">
+
 					<div class="wthree-text">
 						<label class="anim">
 							<input type="checkbox" class="checkbox" required="">
 							<span>Estoy de acuerdo con los terminos y condiciones</span>
 						</label>
 						<div class="clear"> </div>
-					</div>
-					<input type="submit" value="SIGN UP">
+					</div> 
+					
+					
+					
+					<button type="submit">Guardar</button> 
+					 {% if messages %}
+                                <ul class="messages">
+                                    {% for message in messages %}
+                                        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                                    {% endfor %}
+                                </ul>
+                                {% endif %} 
 				</form>
 				<p>¿Ya tienes una cuenta? <a href="{% url 'index' %}"> Ingresa</a></p>
 			</div>
