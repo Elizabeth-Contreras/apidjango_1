@@ -21,7 +21,7 @@
 		<h1>Registrar usuario</h1>
 		<div class="main-agileinfo">
 			<div class="agileits-top">
-				<form method="post" action="{% url 'registro_usuario' %}">
+				<form method="post" action="{% url 'ingresa_usuario' %}">
 
 					{% csrf_token %}
 					<input class="text" type="text" id="id_usuario" name="id_usuario" placeholder="Usuario" required="">
@@ -29,25 +29,27 @@
 					<input class="text" type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required="">
 					<input class="text w3lpass" type="password" name="confirmar_contrasena" placeholder="Confirmar contraseña" required="">
 
-					<div class="wthree-text">
+					<!-- <div class="wthree-text">
 						<label class="anim">
 							<input type="checkbox" class="checkbox" required="">
 							<span>Estoy de acuerdo con los terminos y condiciones</span>
 						</label>
 						<div class="clear"> </div>
-					</div> 
+					</div>  -->
 					
 					
 					
 					<button type="submit">Guardar</button> 
-					 {% if messages %}
-                                <ul class="messages">
-                                    {% for message in messages %}
-                                        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
-                                    {% endfor %}
-                                </ul>
-                                {% endif %} 
+					<br>
+					{% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+                <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %} 
 				</form>
+				<br>
 				<p>¿Ya tienes una cuenta? <a href="{% url 'index' %}"> Ingresa</a></p>
 			</div>
 		</div>

@@ -19,7 +19,7 @@ from api.views import Home
 from api.views import Pag2
 from api.views import Inicio
 from api.views import Recupera
-from api.views import registro_usuario
+from api.views import ingresa_usuario
 from api.views import login_view
 from django.urls import path
 
@@ -30,7 +30,7 @@ urlpatterns = [
      path('registro.html', Pag2.as_view(), name='registro'),
      path('principal.html', Inicio.as_view(), name='principal'),
      path('recuperar.html', Recupera.as_view(), name='recuperar'), 
-     path('registro/', registro_usuario, name='registro_usuario'),
+     path('registro/', ingresa_usuario, name='ingresa_usuario'),
      #path('admin/', admin.site.urls),
      path('index/', login_view, name='login_view'),
 ]
