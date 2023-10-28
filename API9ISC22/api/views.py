@@ -12,12 +12,23 @@ class Pag2(APIView):
     template_name='registro.html'
     def get(self,request):
         return render(request,self.template_name)
-    
 
 class Inicio(APIView):
+
     template_name='principal.html'
     def get(self,request):
-        return render(request,self.template_name)
+        grafica_data = grafica(request)
+        tuvista_data = tuvista1(request)
+        tuvista_data2 = tuvista2(request)
+        tuvista_data3 = tuvista3(request)
+        tuvista_data4 = tuvista4(request)
+        tuvista_data5 = tuvista5(request)
+        
+        # Combina los contextos de ambas vistas en un solo diccionario
+        context = {**grafica_data, **tuvista_data, **tuvista_data2, **tuvista_data3, **tuvista_data4, **tuvista_data5}
+    
+        return render(request,self.template_name, context)
+    
     
 class Recupera(APIView):
     template_name='recuperar.html'
@@ -29,7 +40,7 @@ from django.core.mail import EmailMessage
 from django.template.loader import render_to_string
 from django.conf import settings
 from django.contrib import messages
-from .models import Usuario  
+from .models import Usuario, Informacion
 
 def ingresa_usuario(request):
     if request.method == "POST":
@@ -96,3 +107,42 @@ def login_view(request):
             messages.error(request, 'Credenciales inválidas. Inténtalo de nuevo')
 
     return render(request, "index.html")  # regresar al login
+
+from django.shortcuts import render
+from .models import Informacion
+
+
+def grafica(request):
+    total = Informacion.objects.all()
+    return {'total': total}
+
+#Grafica de barras
+def tuvista1(request):
+    # Realiza una consulta que cuente las filas con 'SI' en la columna pregunta1
+    count1 = Informacion.objects.filter(pregunta2="Si").count()
+    return {'count_si': count1}
+
+def tuvista2(request):
+    # Realiza una consulta que cuente las filas con 'NO' en la columna pregunta1
+    count2 = Informacion.objects.filter(pregunta2="No").count()
+    return {'count_no': count2}
+
+
+#Grafica pie
+def tuvista3(request):
+    # Realiza una consulta que cuente las filas con 'SI' en la columna pregunta1
+    count3 = Informacion.objects.filter(pregunta6="Computadora").count()
+    return {'count_compu': count3}
+
+def tuvista4(request):
+    # Realiza una consulta que cuente las filas con 'NO' en la columna pregunta1
+    count4 = Informacion.objects.filter(pregunta6="Teléfono móvil").count()
+    return {'count_tel': count4}
+
+def tuvista5(request):
+    # Realiza una consulta que cuente las filas con 'NO' en la columna pregunta1
+    count4 = Informacion.objects.filter(pregunta6="Tableta").count()
+    return {'count_tablet': count4}
+
+def HomePage(request):
+    return render(request, 'principal.html')

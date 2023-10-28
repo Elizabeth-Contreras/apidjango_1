@@ -80,11 +80,17 @@ WSGI_APPLICATION = 'API9ISC22.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+      'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'PASSWORD': '1234',
+        'HOST': 'localhost',  # O la dirección de tu servidor PostgreSQL
+        'PORT': '5433',  # Deja esto en blanco para usar el puerto predeterminado (5432)
+        } 
     }
-}
+  
+
 
 
 # Password validation
@@ -134,5 +140,5 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'elicontreras201@gmail.com'
-EMAIL_HOST_PASSWORD = 'zqezcwybfsbvbvwe'
+EMAIL_HOST_PASSWORD = ''
 EMAIL_USE_TLS = True
