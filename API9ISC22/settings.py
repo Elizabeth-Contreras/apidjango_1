@@ -28,8 +28,6 @@ DEBUG = True
 ALLOWED_HOSTS = ['prueba1-sioh.onrender.com']
 
 
-
-
 # Application definition
 
 INSTALLED_APPS = [
