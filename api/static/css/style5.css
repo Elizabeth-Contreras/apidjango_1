@@ -57,3 +57,41 @@
 	    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15) !important; 
 	}
 }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .tabla-container {
+    margin-top: 20px; /* Espacio entre el margen superior del cuerpo de la página y la tabla */
+  }
+
+  .columna1 {
+    background-color: #E6F7FF; /* Color claro para la columna 1 */
+  }
+
+  .columna2 {
+    background-color: #F0FFE6; /* Color claro para la columna 2 */
+  }
+
+  .columna3 {
+    background-color: #FFE6E6; /* Color claro para la columna 3 */
+  }
+
+  .columna4 {
+    background-color: #f8e6ff; /* Color claro para la columna 3 */
+  }
+
+  .columna5 {
+    background-color: #e6f5ff; /* Color claro para la columna 3 */
+  }
+  .columna6 {
+    background-color: #fcffe6; /* Color claro para la columna 3 */
+  }

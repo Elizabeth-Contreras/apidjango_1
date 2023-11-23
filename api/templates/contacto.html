@@ -1,47 +1,90 @@
 {%load static%}
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Contacto</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
-    <link rel="stylesheet" href="{% static 'css/style5.css' %}">
-</head>
-<body>
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-sm bg-light navbar-light justify-content-center">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="{% url 'principal' %}">Inicio</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Contacto</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link " href="#">Chatbot</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="{% url 'index' %}">Salir</a>
-          </li>
-          
-        </ul>
-      </nav>
-    
-        
-<div style="height: 15px;">
-    <center>
-        <h3>DEPARTAMENTO DE SERVICIO SOCIAL Y RESISDENCIAS PROFESIONALES </h3>
-        <h4>LCDA. THELMA GALINDO LÓPEZ</h4>
-        <h5>JEFA DEL DEPARTAMENTO DE SERVICIO SOCIAL Y RESISDENCIAS PROFESIONALES</h5>
-    
-        <table>
-            
-        </table>
-    </center>
-    
-    
-</body>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Contacto</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
+        <link rel="stylesheet" href="{% static 'css/style5.css' %}">
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav
+            class="navbar navbar-expand-sm bg-light navbar-light justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'principal' %}">Inicio</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'contacto' %}">Contacto</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link " href="#">Chatbot</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'index' %}">Salir</a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <div style="height: 15px;"></div>
+        <div class="tabla_Datos" style="margin-left: 5%; margin-right: 5%;">
+            <center>
+                <h3>DEPARTAMENTO DE SERVICIO SOCIAL Y RESISDENCIAS PROFESIONALES
+                </h3>
+                <h4>LCDA. THELMA GALINDO LÓPEZ</h4>
+                <h5>JEFA DEL DEPARTAMENTO DE SERVICIO SOCIAL Y RESISDENCIAS
+                    PROFESIONALES</h5>
+                <br>
+
+                <table border="1" class="tabla-container">
+                    <tr>
+                        <td style="font-weight: bold"  class="columna1">ING. VERÓNICA GUEVARA CASTILLO</td>
+                        <td style="font-weight: bold" class="columna2">LCDA. IRENE GÓMEZ ÁLVAREZ</td>
+                        <td style="font-weight: bold" class="columna3">C. DELFINO SANTIAGO GÓMEZ</td>
+                    </tr>
+                    <tr>
+                        <td  class="columna1">
+                            Licenciatura en Administración <br>
+                            Ingeniería Mecatrónica <br>
+                            Sistema abierto
+                        </td>
+
+                        <td class="columna2">
+                            Ingeniería Industrial <br>
+                            Ingeniería Química <br>
+                            Ingeniería en Sistemas Computacionales
+                        </td>
+
+                        <td class="columna3">
+                            Licenciatura en Gastronomía <br>
+                            Ingeniería en Animación Digital y Efectos Visuales
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold" class="columna4" colspan="3">
+                            Correo electronico: serviciosocial@teschi.edu.mx</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold" class="columna5" colspan="3">
+                            Teléfono: 55 50 44 41 31 ext. 403</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold" class="columna6" colspan="3">
+                            Facebook: https://www.facebook.com/teschiservisocialcomu</td>
+                    </tr>
+                </table>
+    <br>
+    <br>
+    <br>
+
+</center>
+        </div>
+    </body>
 </html>
