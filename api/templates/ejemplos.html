@@ -1,0 +1,85 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Ejemplo de llenado de documentos</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
+    <link rel="stylesheet" href="{% static 'css/style5.css' %}">
+</head>
+<body style="background-color: lightblue;">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-sm bg-light navbar-light justify-content-center">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'principal' %}">Inicio</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link " href="#">Chatbot</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'index' %}">Salir</a>
+          </li>
+          
+        </ul>
+      </nav>
+    
+        
+<div style="height: 5px;">
+
+</div>
+   <section class="gallery-block cards-gallery">
+	    <div class="container">
+	        <div class="heading">
+	          <h2>LLenado de documentos de servicio social</h2>
+	        </div>
+            <center>
+                <div class="row">
+	            <div class="col-md-6 col-lg-4">
+	                <div class="card border-0 transform-on-hover">
+	                	<a class="lightbox" href="{% static 'img/Imagen2.png' %}">
+	                		<img src="{% static 'img/Imagen2.png' %}" alt="Card Image" class="card-img-top">
+	                	</a>
+	                    <div class="card-body">
+	                        <h6><a href="#">SOLICITUD DE SERVICIO SOCIAL (FRENTE)</a></h6>
+	                        <p class="text-muted card-text">1. Colocar la fecha de entrega de acuerdo a la carrera <br>
+                            2. Colocar nombre completo, CURP, sexo, edad, domicilio completo y datos de contacto del alumno <br>
+                            3. Indicar la carrera, matrícula, semestre actual, horario , promedio y porcentaje de creditos actual <br> 
+                            4. Colocar datos de la empresa u organismo <br>
+                            5. Seleccionar el tipo de programa <br>
+                            6. Firmar el prestado de servicio (alumno)  <br> </p>
+                        </div>
+	                </div>
+	            </div>
+	            <div class="col-md-6 col-lg-4">
+	                <div class="card border-0 transform-on-hover">
+						<a class="lightbox" href="{% static 'img/Imagen3.png' %}">
+	                		<img src="{% static 'img/Imagen3.png' %}" alt="Card Image" class="card-img-top">
+		                </a>
+	                    <div class="card-body">
+	                        <h6><a href="#">SOLICITUD DE SERVICIO SOCIAL (REVERSO)</a></h6>
+	                        <p class="text-muted card-text">En el reverso de la solicitud imprimir el CURP actualizado del alumno</p>
+	                    </div>
+	                </div>
+                </div>
+                
+	            </div>
+            </center>
+	        
+	            
+	            
+	              
+	    </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script>
+        baguetteBox.run('.cards-gallery', { animation: 'slideIn'});
+    </script>
+</body>
+</html>

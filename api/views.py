@@ -8,6 +8,11 @@ class Home(APIView):
     def get(self,request):
         return render(request,self.template_name)
     
+class Ejemplo(APIView):
+    template_name='ejemplos.html'
+    def get(self,request):
+        return render(request,self.template_name)
+   
 class Pag2(APIView):
     template_name='registro.html'
     def get(self,request):
@@ -147,24 +152,3 @@ def tuvista5(request):
 def HomePage(request):
     return render(request, 'principal.html')
 
-
-# # En views.py
-# from django.http import JsonResponse
-# from google.cloud import dialogflow, DetectIntentRequest, DetectIntentResponse, sessions_client
-
-# def detect_intent(request):
-#     project_id = 'chatbot-servicio-ppg9'
-#     session_id = 'unique-session-id'
-#     text = request.GET.get('message', 'Hola')
-    
-#     session_client = sessions_client.SessionsClient()
-#     session = session_client.session_path(project_id, session_id)
-
-#     text_input = DetectIntentRequest.TextInput(text=text, language_code='es')
-#     query_input = DetectIntentRequest.QueryInput(text=text_input)
-    
-#     response: DetectIntentResponse = session_client.detect_intent(
-#         request={"session": session, "query_input": query_input,}
-#     )
-
-#     return JsonResponse({'response': response.query_result.fulfillment_text})
