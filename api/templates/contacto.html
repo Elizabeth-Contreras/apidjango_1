@@ -1,14 +1,47 @@
+{%load static%}
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Contacto</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
+    <link rel="stylesheet" href="{% static 'css/style5.css' %}">
 </head>
 <body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-sm bg-light navbar-light justify-content-center">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'principal' %}">Inicio</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link " href="#">Chatbot</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'index' %}">Salir</a>
+          </li>
+          
+        </ul>
+      </nav>
+    
+        
+<div style="height: 15px;">
+    <center>
+        <h3>DEPARTAMENTO DE SERVICIO SOCIAL Y RESISDENCIAS PROFESIONALES </h3>
+        <h4>LCDA. THELMA GALINDO LÓPEZ</h4>
+        <h5>JEFA DEL DEPARTAMENTO DE SERVICIO SOCIAL Y RESISDENCIAS PROFESIONALES</h5>
+    
+        <table>
+            
+        </table>
+    </center>
+    
     
 </body>
 </html>

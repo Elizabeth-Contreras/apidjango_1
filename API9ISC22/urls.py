@@ -18,7 +18,7 @@ from django.urls import path
 from api.views import Home
 from api.views import Pag2
 from api.views import Inicio
-from api.views import Recupera, Ejemplo
+from api.views import Recupera, Ejemplo, Contacto
 from api.views import ingresa_usuario
 from api.views import login_view, grafica
 
@@ -28,6 +28,7 @@ urlpatterns = [
     path('registro.html', Pag2.as_view(), name='registro'),
     path('principal.html', Inicio.as_view(), name='principal'),
     path('ejemplos.html', Ejemplo.as_view(), name='ejemplos'),
+    path('contacto.html', Contacto.as_view(), name='contacto'),
     path('recuperar.html', Recupera.as_view(), name='recuperar'), 
     path('registro/', ingresa_usuario, name='ingresa_usuario'),
     #path('admin/', admin.site.urls),

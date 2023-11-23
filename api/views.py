@@ -13,6 +13,12 @@ class Ejemplo(APIView):
     def get(self,request):
         return render(request,self.template_name)
    
+class Contacto(APIView):
+    template_name='contacto.html'
+    def get(self,request):
+        return render(request,self.template_name)
+   
+
 class Pag2(APIView):
     template_name='registro.html'
     def get(self,request):
