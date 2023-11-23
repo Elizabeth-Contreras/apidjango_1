@@ -19,7 +19,7 @@ from api.views import Home
 from api.views import Pag2
 from api.views import Inicio
 from api.views import Recupera, Ejemplo, Contacto, Chat
-from api.views import ingresa_usuario
+from api.views import ingresa_usuario, Informar
 from api.views import login_view, grafica
 
 urlpatterns = [
@@ -29,6 +29,7 @@ urlpatterns = [
     path('principal.html', Inicio.as_view(), name='principal'),
     path('ejemplos.html', Ejemplo.as_view(), name='ejemplos'),
     path('contacto.html', Contacto.as_view(), name='contacto'),
+    path('informar.html', Informar.as_view(), name='informar'),
     path('chat.html', Chat.as_view(), name='chat'),
     path('recuperar.html', Recupera.as_view(), name='recuperar'), 
     path('registro/', ingresa_usuario, name='ingresa_usuario'),

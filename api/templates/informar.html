@@ -1,0 +1,80 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
+    <link rel="stylesheet" href="{% static 'css/style7.css' %}">
+    <script src='main.js'></script>
+</head>
+<body>
+    </head>
+    <body>
+    <!-- Navigation-->
+    <nav
+    class="navbar navbar-expand-sm bg-light navbar-light justify-content-center">
+    <ul class="navbar-nav">
+        <li class="nav-item active">
+            <a class="nav-link" href="{% url 'principal' %}">Inicio</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="{% url 'contacto' %}">Contacto</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link " href="{% url 'chat' %}">Chatbot</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="{% url 'index' %}">Salir</a>
+        </li>
+
+    </ul>
+</nav>
+<br>
+<br>
+<br>
+    <div class="container">
+      <h1>Servicio Social</h1>
+    
+      <p>Se denomina servicio social al conjunto de actividades de carácter
+         obligatorio y temporal (un total 480 horas en seis meses mínimo y
+          máximo dos años) que presentan los estudiantes y pasantes de las carreras
+           técnicas y profesionales, para coadyuvar al mejoramiento de las condiciones
+            de vida de la población, en el que aplicarán los conocimientos humanísticos,
+             científicos y técnicos, adquiridos en su formación.</p>
+    <br><br>
+      <h2>Opciones para realizar el servicio social</h2>
+      <p>En las instituciones, dependencias, organismos y empresas con las
+         que el Tecnológico tiene convenio de colaboración vigente; y con las que
+          se establezca un convenio previo* al incorporarse el estudiante que atenderá 
+          el procedimiento de Servicio Social.</p>
+    <br>
+    <br>
+      <div class="objectives">
+        <h2>Objetivos</h2>
+        <ul>
+          <li>Contribuir a la formación de los estudiantes fomentando su responsabilidad 
+            comunitaria y propiciar el desarrollo de principios y valores éticos.</li>
+          <li>Impulsar la participación de los jóvenes en el desarrollo cultural, social 
+            y económico de las comunidades de la Entidad.</li>
+          <li>Desarrollar en los prestadores el sentido de corresponsabilidad con la sociedad.</li>
+          <li>Poner en práctica los conocimientos científicos, tecnológicos y humanísticos
+             para facilitar su ingreso al mercado laboral.</li>
+          <li>Fortalecer la Identidad Estatal entre los jóvenes y la población mexiquense.</li>
+          <li>Establecer un puente de unión entre la ciudadanía y el Estado, a través de 
+            los prestadores de servicio social.</li>
+          <li>Fomentar la permanencia de los jóvenes en sus comunidades de origen.</li>
+          <li>Coadyuvar en la atención de necesidades de las comunidades en condiciones
+             de pobreza y marginación.</li>
+        </ul>
+      </div>
+    </div>
+    
+    </body>
+</body>
+</html>
