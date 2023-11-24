@@ -12,6 +12,11 @@ class Chat(APIView):
     template_name='chat.html'
     def get(self,request):
         return render(request,self.template_name)
+    
+class Calendario(APIView):
+    template_name='calendario.html'
+    def get(self,request):
+        return render(request,self.template_name)
 
 class Informar(APIView):
     template_name='informar.html'
