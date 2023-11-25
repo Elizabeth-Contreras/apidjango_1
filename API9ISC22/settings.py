@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
 ]
 
 MIDDLEWARE = [
@@ -79,7 +80,7 @@ WSGI_APPLICATION = 'API9ISC22.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
+""" DATABASES = {
       'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'bdservicio',
@@ -88,10 +89,10 @@ DATABASES = {
         'HOST': 'oregon-postgres.render.com',  
         'PORT': '5432',  
         } 
-    } 
+    }  """
 
     
-""" 
+
 DATABASES = {
       'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -102,8 +103,6 @@ DATABASES = {
         'PORT': '5433', 
         } 
     }
-    """
-
 
 
 # Password validation
