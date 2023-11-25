@@ -19,7 +19,7 @@ from api.views import Home
 from api.views import Pag2
 from api.views import Inicio
 from api.views import Recupera, Ejemplo, Contacto, Chat
-from api.views import ingresa_usuario, Informar, Calendario
+from api.views import ingresa_usuario, Informar,Calendario
 from api.views import login_view, grafica
 
 urlpatterns = [
