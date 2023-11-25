@@ -19,6 +19,6 @@ class Informacion(models.Model):
 class Contactame(models.Model):
     nombre = models.CharField(max_length=100)
     correo_electronico = models.CharField(max_length=60, unique=True)
-    telefono = models.IntegerField(max_length=11)
+    telefono = models.CharField(max_length=11)
     mensaje = models.CharField(max_length=500)
 # Create your models here.
