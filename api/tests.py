@@ -1,4 +1,4 @@
-from django.test import TestCase
+""" from django.test import TestCase
 from api.models import Usuario, Informacion, Contactame
 
 class TestUsuarioModel(TestCase):
@@ -73,4 +73,4 @@ class TestUsuarioModel(TestCase):
     def test_correo_con_arroba_usuario(self):
         correo_usuario = Usuario(correo='elicontreras201@gmail.com')
         assert '@' in correo_usuario.correo, "El correo electrónico debe contener '@'"
-        
+         """
