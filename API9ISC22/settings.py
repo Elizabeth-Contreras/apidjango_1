@@ -90,9 +90,9 @@ DATABASES = {
         'PORT': '5432',  
         } 
     } 
+ 
 
-"""
-DATABASES = {
+"""DATABASES = {
       'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'postgres',
@@ -101,8 +101,8 @@ DATABASES = {
         'HOST': 'localhost',  
         'PORT': '5433', 
         } 
-    }
-""" 
+    }""" 
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
