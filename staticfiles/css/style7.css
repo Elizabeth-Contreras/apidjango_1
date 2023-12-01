@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: justify;
+    background-color: #E6F7FF; /
+  }
+
+  h1, h2, h3 {
+    color: rgb(0, 0, 0)
+  }
+
+  p {
+    color: rgb(0, 0, 0);
+  }
+
+  .container {
+    max-width: 85%;
+    margin: 0 auto;
+  }
+
+  .objectives {
+    margin-top: 20px;
+  }
