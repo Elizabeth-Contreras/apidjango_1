@@ -1,91 +1,222 @@
 {%load static%}
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Ejemplo de llenado de documentos</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
-    <link rel="stylesheet" href="{% static 'css/style5.css' %}">
-</head>
-<body style="background-color: lightblue;">
-    <!-- Navigation-->
-    <nav
-    class="navbar navbar-expand-sm bg-light navbar-light justify-content-center">
-    <ul class="navbar-nav">
-        <li class="nav-item active">
-            <a class="nav-link" href="{% url 'principal' %}">Inicio</a>
-        </li>
-        <li class="nav-item active">
-            <a class="nav-link" href="{% url 'informar' %}">PRO - 018</a>
-        </li>
-        <li class="nav-item active">
-            <a class="nav-link" href="{% url 'contacto' %}">Contacto</a>
-        </li>
-        <li class="nav-item active">
-            <a class="nav-link " href="{% url 'chat' %}">Chatbot</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link " href="{% url 'calendario' %}">Calendario</a>
-      </li>
-        <li class="nav-item active">
-            <a class="nav-link" href="{% url 'index' %}">Salir</a>
-        </li>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Ejemplo de llenado de documentos</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
+        <link rel="stylesheet" href="{% static 'css/style5.css' %}">
+    </head>
+    <body style="background-color: lightblue;">
+        <!-- Navigation-->
+        <nav
+            class="navbar navbar-expand-sm bg-light navbar-light justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'principal' %}">Inicio</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'informar' %}">PRO - 018</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'contacto' %}">Contacto</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link " href="{% url 'chat' %}">Chatbot</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link " href="{% url 'calendario' %}">Calendario</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'index' %}">Salir</a>
+                </li>
 
-    </ul>
-</nav>
-    
-    <br>
-    <br>
+            </ul>
+        </nav>
 
-   <section class="gallery-block cards-gallery">
-	    <div class="container">
-	        <div class="heading">
-	          <h2>LLenado de documentos de servicio social</h2>
-	        </div>
-            <center>
-                <div class="row">
-	            <div class="col-md-6 col-lg-4">
-	                <div class="card border-0 transform-on-hover">
-	                	<a class="lightbox" href="{% static 'img/Imagen2.png' %}">
-	                		<img src="{% static 'img/Imagen2.png' %}" alt="Card Image" class="card-img-top">
-	                	</a>
-	                    <div class="card-body">
-	                        <h6><a href="#">SOLICITUD DE SERVICIO SOCIAL (FRENTE)</a></h6>
-	                        <p class="text-muted card-text">1. Colocar la fecha de entrega de acuerdo a la carrera <br>
-                            2. Colocar nombre completo, CURP, sexo, edad, domicilio completo y datos de contacto del alumno <br>
-                            3. Indicar la carrera, matrícula, semestre actual, horario , promedio y porcentaje de creditos actual <br> 
-                            4. Colocar datos de la empresa u organismo <br>
-                            5. Seleccionar el tipo de programa <br>
-                            6. Firmar el prestado de servicio (alumno)  <br> </p>
-                        </div>
-	                </div>
-	            </div>
-	            <div class="col-md-6 col-lg-4">
-	                <div class="card border-0 transform-on-hover">
-						<a class="lightbox" href="{% static 'img/Imagen3.png' %}">
-	                		<img src="{% static 'img/Imagen3.png' %}" alt="Card Image" class="card-img-top">
-		                </a>
-	                    <div class="card-body">
-	                        <h6><a href="#">SOLICITUD DE SERVICIO SOCIAL (REVERSO)</a></h6>
-	                        <p class="text-muted card-text">En el reverso de la solicitud imprimir el CURP actualizado del alumno</p>
-	                    </div>
-	                </div>
+        <br>
+        <br>
+
+        <section class="gallery-block cards-gallery">
+            <div class="container">
+                <div class="heading">
+                    <h2>LLenado de documentos de servicio social</h2>
                 </div>
-                
-	            </div>
-            </center>
-	        
-	            
-	            
-	              
-	    </div>
-    </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
-    <script>
+                <center>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card border-0 transform-on-hover">
+                                <a class="lightbox"
+                                    href="{% static 'img/solicitud.jpg' %}">
+                                    <img src="{% static 'img/solicitud.jpg' %}"
+                                        alt="Card Image" class="card-img-top">
+                                </a>
+                                <div class="card-body">
+                                    <h6><a href="#">SOLICITUD DE SERVICIO SOCIAL
+                                            (FRENTE)</a></h6>
+                                    <p class="text-muted card-text">1. Colocar
+                                        la fecha de entrega de acuerdo a la
+                                        carrera <br>
+                                        2. Colocar nombre completo, CURP, sexo,
+                                        edad, domicilio completo y datos de
+                                        contacto del alumno <br>
+                                        3. Indicar la carrera, matrícula,
+                                        semestre actual, horario , promedio y
+                                        porcentaje de creditos actual <br>
+                                        4. Colocar datos de la empresa u
+                                        organismo <br>
+                                        5. Seleccionar el tipo de programa <br>
+                                        6. Firmar el prestado de servicio
+                                        (alumno) <br> </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card border-0 transform-on-hover">
+                                <a class="lightbox"
+                                    href="{% static 'img/Imagen3.png' %}">
+                                    <img src="{% static 'img/Imagen3.png' %}"
+                                        alt="Card Image" class="card-img-top">
+                                </a>
+                                <div class="card-body">
+                                    <h6><a href="#">SOLICITUD DE SERVICIO SOCIAL
+                                            (REVERSO)</a></h6>
+                                    <p class="text-muted card-text">En el
+                                        reverso de la solicitud imprimir el CURP
+                                        actualizado del alumno</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card border-0 transform-on-hover">
+                                <a class="lightbox"
+                                    href="{% static 'img/CARTA_DE_PRESENTACION.jpg' %}">
+                                    <img
+                                        src="{% static 'img/CARTA_DE_PRESENTACION.jpg' %}"
+                                        alt="Card Image" class="card-img-top">
+                                </a>
+                                <div class="card-body">
+                                    <h6><a href="#">CARTA DE PRESENTACIÓN</a></h6>
+                                    <p class="text-muted card-text">Este
+                                        documento es expedido por el Dept. de
+                                        Servicio Social y Residencias
+                                        Profesionales <br>
+                                        - Revisar que los datos del alumnos sean
+                                        correctos: nombre, matrícula, promedio,
+                                        creditos y promedio general.
+                                        <br>
+                                        - Revisar que sean correctos lo datos
+                                        del destinatario, es decir, la persona
+                                        encargado de la empresa, dependencia o
+                                        institución <br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card border-0 transform-on-hover">
+                                <a class="lightbox"
+                                    href="{% static 'img/CARTA_ACEPTACION.jpg' %}">
+                                    <img
+                                        src="{% static 'img/CARTA_ACEPTACION.jpg' %}"
+                                        alt="Card Image" class="card-img-top">
+                                </a>
+                                <div class="card-body">
+                                    <h6><a href="#">CARTA DE ACEPTACIÓN</a></h6>
+                                    <p class="text-muted card-text">Este
+                                        documento es expedido por la empresa en
+                                        donde vas a realizar el servicio social<br>
+                                        - Es importante solicitarlo en la
+                                        primera semana de servicio social <br>
+                                        - El destinatario es la Lcda. Thelma
+                                        Galindo López<br>
+                                        - El oficio debe mencionar el nombre,
+                                        matrícula, carrera del prestador de
+                                        servicio y además incluir fecha y
+                                        horario del periodo <br>
+                                        - Mencionar las actividades a realizar
+                                        en el servicio (No olvidando que debe
+                                        iniciar la oración con la palabra APOYO)<br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card border-0 transform-on-hover">
+                                <a class="lightbox"
+                                    href="{% static 'img/HORAS1.jpg' %}">
+                                    <img src="{% static 'img/HORAS1.jpg' %}"
+                                        alt="Card Image" class="card-img-top">
+                                </a>
+                                <a class="lightbox"
+                                    href="{% static 'img/HORAS2.jpg' %}">
+                                    <img src="{% static 'img/HORAS2.jpg' %}"
+                                        alt="Card Image" class="card-img-top">
+                                </a>
+                                <div class="card-body">
+                                    <h6><a href="#">REGISTRO DE HORAS 1ER
+                                            TRIMESTRE</a></h6>
+                                    <p class="text-muted card-text">Al cumplir 3
+                                        meses de servicio debes realizar un
+                                        registro contabilizando las 4 horas
+                                        diarias que asistes al servicio
+                                        <br> - El rango de fecha debes consultar
+                                        en la página de facebook
+                                        "Teschiservisocial Torres" o acudir
+                                        directamente al Dept. <br>
+                                        - Antes de solicitar la firma del jefe,
+                                        debes ir al departamento de servicio
+                                        social para que revisen que este
+                                        correcto el llenado
+                                    </p> <br>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card border-0 transform-on-hover">
+                                <a class="lightbox"
+                                    href="{% static 'img/1informe.jpg' %}">
+                                    <img
+                                        src="{% static 'img/1informe.jpg' %}"
+                                        alt="Card Image" class="card-img-top">
+                                </a>
+                                <div class="card-body">
+                                    <h6><a href="#">1ER INFORME TRIMESTRAL</a></h6>
+                                    <p class="text-muted card-text">Este
+                                        documento se obtiene en la página: <br>
+                                        - Debes seguir los pasos que se muestra
+                                        en el sig. enlace:
+                                        <br>
+                                        - No imprimir, cuando vayas al Dept. de
+                                        Servicio Social los encargados lo
+                                        imprimen y firmas en ese momento <br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </center>
+
+            </div>
+        </section>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+        <script>
         baguetteBox.run('.cards-gallery', { animation: 'slideIn'});
     </script>
-</body>
+    </body>
 </html>
