@@ -20,7 +20,8 @@ from api.views import Pag2
 from api.views import Inicio
 from api.views import Recupera, Ejemplo, Contacto, Chat
 from api.views import ingresa_usuario, Informar,Calendario
-from api.views import login_view, grafica
+from api.views import login_view
+from django.conf.urls.static import static
 
 urlpatterns = [
     #path('admin/', admin.site.urls),
@@ -33,8 +34,9 @@ urlpatterns = [
     path('calendario.html', Calendario.as_view(), name='calendario'),
     path('chat.html', Chat.as_view(), name='chat'),
     path('recuperar.html', Recupera.as_view(), name='recuperar'), 
-    path('registro/', ingresa_usuario, name='ingresa_usuario'),
+    path('principal/', ingresa_usuario, name='ingresa_usuario'),
     #path('admin/', admin.site.urls),
     path('index/', login_view, name='login_view'),
 
 ]
+

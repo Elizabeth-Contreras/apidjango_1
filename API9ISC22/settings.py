@@ -141,13 +141,25 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-import os 
+""" import os 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage' 
 
+
+# Configuración para el backend de almacenamiento para archivos subidos
+
+DEFAULT_FILE_STORAGE = 'storages.backends.gcloud.GoogleCloudStorage'
+GS_BUCKET_NAME = 'sitiowebchattt'
+STATIC_URL = 'https://storage.googleapis.com/sitiowebchattt/static/'
+STATICFILES_STORAGE = 'storages.backends.gcloud.GoogleCloudStorage'
+"""
+DEFAULT_FILE_STORAGE = 'storages.backends.gcloud.GoogleCloudStorage'
+GS_BUCKET_NAME = 'sitiowebchattt'
+STATIC_URL = 'https://storage.googleapis.com/sitiowebchattt/static/'
+STATICFILES_STORAGE = 'storages.backends.gcloud.GoogleCloudStorage'
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 

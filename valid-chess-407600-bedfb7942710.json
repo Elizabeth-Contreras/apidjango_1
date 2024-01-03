@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "valid-chess-407600",
+  "private_key_id": "bedfb7942710ffbbe3c892f72347ea424b0b3c8d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCzlCLzf7jUMKJw\ne2GxsSS799oqh2M6IR4Gk9LhzP4EeixlpQ5BzXmVMMjJ9EuR+JAh7CriM0tJ6av6\nMiVyTJ9Xq56NLKL6gmRvYesuBf4D/5Xi1W4X0TXFj9ZtRvgO9IwDw/fqnrrfNkrl\nz3Fom+ROh46VZgyMWqFcyhhnkwCytt1uzrkLsdPK1+GJLwDgWmlS5DYivLVkSAZJ\nsWcyRqNc96H6mNWwZ713co64CCq/zrcpxZ8WXroVHeSe5CQrZDDuHdcY0RvyY+GN\nJC+knQzh6sQhFE6CzQTWpG5j7C3EhAg2I72AMr+COrX3U3CgmlhkPmZWEMTa4YId\n7rCZWc49AgMBAAECggEAFCgAdExVtptu4Ck5IfS8Jsz/E972aEPnVt2owed8a4w7\nB32rR/+EMhazstdU1CGOLACSH6maPcWYpBCU22t2RyTgOwBTmsKf+1CGUTgi9tft\nPvSt0saMvowSiVl55lPUk2efoBoI55z0cy8Bj7hPu/DDNEmsBuT1T7DvZFC/t09X\nBUWrePn4JCOKMFBjWn7rykc2Xm0B1VJXHfmm3lt2VWpf0RIWvjj+7bL0ckREK/M+\nYV2ChjFjXc9peFEOfwK2TnzbFtzCGQBBWZGv0kSrn0/+W8Zf9wdLZ7UdtiuRThfF\nldDsJO1++tBXNQfNQYvG5qOtXGlxnVDg18zLNeJ1AQKBgQDgKN+8HMltRqtn1Cu1\n5WBdsPcYb/HZEMfq8pKC9TV/uKrzlLsSKpSf1AFgJMPYtYG8ntkG4Rh2PjsYK/aU\nXKiQM/RN0csF2dhSwW6SlaylF+DvC1SNs6M5BCaX2rXkAmSHt5KN60Mf+FSwR9lt\nXWOC9ascIC0ucf64bl5wB/wTbQKBgQDNFiltvL5SQg/bb1H0tiE41TBUfRShgApS\nu71q/V5f4zIwb4tcOJMKeTJ263+tNnMKQHPoH2wTJSmKVeKbFLYnKJTyzjK88Viq\nbyvAR3CMZqibvXeDph+MqEtBv+AjR5WPVY2jMpl1NZAzb8E06YeOxTYFlCxSYY93\nq3g0OXgUEQKBgQDXZY9wVH0du12zvMZv2ETcYtNdsRxFiAGC+6rbmkLZQxtKSq3k\nC/SbDH5x44Ip+Gf9VuqW2K/H146zcHNWJx92yeXE7YZYTfe3tdXJl3e5gJONQGb0\nbxy2Cg4Ht4s22TG+1CBIrTvoOZkvdyswEyAvVGAi+6xOyA2LLcsjfhi0lQKBgEDZ\nWCJGA1xZXVBCxASALsMczlp47rQem6ULjlqtYVEqsy0TqFpx3TT7m9R0pPutcvTz\n6nKktPTc1GTUwYHOK8b4Exkv0GVkX2gNHSWAsXsD3x7X61mqhuFgOePBe2tMcGNR\nZycKkfG5DS7mkI5dpaqke2+KKfWmucnaY3kIDwsxAoGATc9dZUKb2JNhg3TEqn/a\nUmCjqyCnGzrP49KjAkOkzcbvK0H7a+bOWz9+k2XPobU8sy6LExXbwmPIMDVjOCVk\n82nOQH3AULsXCwAVSxv2Muap7er2MUlPPTUJnnXSnWbG5ti/WRmVG8r2lbe9bQ8z\n3Nq8YXQlp9q38w51V3RH1X8=\n-----END PRIVATE KEY-----\n",
+  "client_email": "cuenta-servicio@valid-chess-407600.iam.gserviceaccount.com",
+  "client_id": "118212889145676205841",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cuenta-servicio%40valid-chess-407600.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
