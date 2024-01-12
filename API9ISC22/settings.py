@@ -137,6 +137,8 @@ USE_L10N = True
 
 USE_TZ = True
 
+CSRF_COOKIE_SECURE = True  # Si estás utilizando HTTPS
+CSRF_COOKIE_SAMESITE = 'Lax'  # O 'Strict' dependiendo de tus requisitos
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
@@ -152,13 +154,13 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
  """
 DEFAULT_FILE_STORAGE = "storages.backends.gcloud.GoogleCloudStorage"
 STATICFILES_STORAGE = "storages.backends.gcloud.GoogleCloudStorage"
-GS_BUCKET_NAME = "sitiodjango"
+GS_BUCKET_NAME = "sitio-ss"
 
-STATIC_URL = 'https://storage.googleapis.com/sitiodjango/static/'
+STATIC_URL = 'https://storage.googleapis.com/sitio-ss/static/'
 from google.oauth2 import service_account
 
 GS_CREDENTIALS = service_account.Credentials.from_service_account_file(
-    r"consolasitio-17a1e6ba688d.json"
+    r"proyecto-s-s-a15cda516b42.json"
 )
 
 # Default primary key field type

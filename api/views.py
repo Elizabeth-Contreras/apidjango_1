@@ -8,6 +8,56 @@ class Home(APIView):
     def get(self,request):
         return render(request,self.template_name)
     
+class Ejemplo2(APIView):
+    template_name='ejemplos2.html'
+    def get(self,request):
+        return render(request,self.template_name)
+
+class Descarga(APIView):
+    template_name='descarga.html'
+    def get(self,request):
+        return render(request,self.template_name)
+    
+class Constancia(APIView):
+    template_name='constancia.html'
+    def get(self,request):
+        return render(request,self.template_name)
+    
+class Aceptacion(APIView):
+    template_name='aceptacion.html'
+    def get(self,request):
+        return render(request,self.template_name)
+
+class Horas(APIView):
+    template_name='horas.html'
+    def get(self,request):
+        return render(request,self.template_name)
+
+class Ine(APIView):
+    template_name='ine-curp.html'
+    def get(self,request):
+        return render(request,self.template_name)
+
+class Presentacion(APIView):
+    template_name='presentacion.html'
+    def get(self,request):
+        return render(request,self.template_name)
+    
+class Solicitud1(APIView):
+    template_name='solicitud_ex1.html'
+    def get(self,request):
+        return render(request,self.template_name)
+    
+class Solicitud2(APIView):
+    template_name='solicitud_ex2.html'
+    def get(self,request):
+        return render(request,self.template_name)
+
+class Termino(APIView):
+    template_name='termino.html'
+    def get(self,request):
+        return render(request,self.template_name)
+    
 class Chat(APIView):
     template_name='chat.html'
     def get(self,request):
@@ -172,49 +222,3 @@ def tuvista5(request):
 
 def HomePage(request):
     return render(request, 'principal.html')
-
-
-
-""" # views.py
-
-from django.shortcuts import render, redirect
-from django.core.mail import EmailMessage
-from django.template.loader import render_to_string
-from django.contrib import messages
-from .models import Contactame
-from django.conf import settings
-
-def ingresa_comentario(request):
-    if request.method == "POST":
-        nombre = request.POST.get('name')
-        correo = request.POST.get('email')
-        telefono = request.POST.get('phone')
-        mensaje = request.POST.get('message')
-
-        # Guarda los datos en el modelo Contactame
-        contacto = Contactame(nombre=nombre, correo_electronico=correo, telefono=telefono, mensaje=mensaje)
-        contacto.save()
-
-        # Envía el correo de confirmación
-        template = render_to_string('email_template2.html', {
-            'nombre': nombre,
-            'correo': correo,
-            'telefono': telefono,
-            'mensaje': mensaje,
-        })
-
-        correo = EmailMessage(
-            subject='Confirmacion de registro',
-            body=template,
-            from_email=settings.EMAIL_HOST_USER,
-            to=['elicontreras201@gmail.com']
-        )
-
-        correo.fail_silently = False
-        correo.send()
-
-        messages.success(request, 'Registro exitoso. Se ha enviado un correo de confirmación')
-        return redirect('principal')
-
-    return redirect('principal')
- """

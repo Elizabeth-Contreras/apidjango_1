@@ -15,10 +15,3 @@ class Informacion(models.Model):
     pregunta5 = models.CharField(max_length=1500)
     pregunta6 = models.CharField(max_length=30)
     pregunta7 = models.CharField(max_length=30)
-    
-class Contactame(models.Model):
-    nombre = models.CharField(max_length=100)
-    correo_electronico = models.CharField(max_length=60, unique=True)
-    telefono = models.CharField(max_length=11)
-    mensaje = models.CharField(max_length=500)
-# Create your models here.
